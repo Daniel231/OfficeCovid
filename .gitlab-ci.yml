@@ -5,5 +5,5 @@ push_to_heroku:
   before_script:
   - git checkout master
   script:
-    - git remote add heroku https://heroku:$HEROKU_KEY@git.heroku.com/Montara.git
+    - git remote add heroku https://heroku:$HEROKU_KEY@git.heroku.com/covid-office.git
     - git push -f heroku HEAD:master
