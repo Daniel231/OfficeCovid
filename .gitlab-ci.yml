@@ -1,0 +1,9 @@
+push_to_heroku:
+  stage: deploy
+  only:
+    - master
+  before_script:
+  - git checkout master
+  script:
+    - git remote add heroku https://heroku:$HEROKU_KEY@git.heroku.com/Montara.git
+    - git push -f heroku HEAD:master

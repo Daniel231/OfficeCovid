@@ -1,0 +1,22 @@
+{
+  "name": "Montara",
+  "version": "1.0.0",
+  "description": "COVID 19 Employments alerts",
+  "main": "app.js",
+  "repository": "",
+  "author": "Daniel231 <danielezra10@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.22",
+    "nodemailer": "^6.4.10",
+    "winston": "^3.3.3"
+  }
+}
