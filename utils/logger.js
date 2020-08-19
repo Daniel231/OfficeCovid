@@ -1,9 +1,16 @@
+/**
+ * The module is responsible for all the winston logger configuration.
+ * 
+ * @author Daniel231
+ */
+
 const { createLogger, format, transports } = require("winston");
 const events = require("events");
 const eventEmitter = new events.EventEmitter();
 
 let logger = null;
 
+// Setting the options for the logs levels
 const logLevels = {
   debug: "debug",
   info: "info",
@@ -12,6 +19,11 @@ const logLevels = {
   critical: "crit"
 };
 
+/**
+ * 
+ * 
+ * @param {json} config = 
+ */
 const getFileLoggerOptions = config => {
   return {
     level: config.level,
@@ -24,6 +36,10 @@ const getFileLoggerOptions = config => {
   };
 };
 
+/**
+ * 
+ * @param {*} config 
+ */
 const getConsoleLoggerOptions = config => {
   return {
     level: config.level,
@@ -33,6 +49,10 @@ const getConsoleLoggerOptions = config => {
   };
 };
 
+/**
+ * 
+ * @param {*} logger 
+ */
 const registerToLogEvents = logger => {
   eventEmitter.on(logLevels.debug, data => {
     logger.debug(data);
