@@ -1,4 +1,4 @@
-const WorklogsModal = require("../db/models/worklogs");
+const WorklogsModal = require("../db/models/Worklogs");
 
 const addWorklog = (employeeNumber, worklogType) => {
     return WorklogsModal.create({Type: worklogType, employeeNumber})
@@ -6,6 +6,10 @@ const addWorklog = (employeeNumber, worklogType) => {
 
 const getWorklog = (id) => {
     return WorklogsModal.findById(id);
+}
+
+const getEmployeeWorklogs = (employeeNumber) => {
+    return WorklogsModal.find({employeeNumber: employeeNumber});
 }
 
 const removeWorklog = (id) => {
@@ -76,5 +80,6 @@ module.exports = {
     addWorklog,
     removeWorklog,
     getWorklog,
-    getExposedEmployeesEmails
+    getExposedEmployeesEmails,
+    getEmployeeWorklogs
 }

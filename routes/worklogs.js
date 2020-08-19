@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { addWorklog, removeWorklog, getWorklog } = require('../core/worklogs');
+const { addWorklog, removeWorklog, getWorklog, getEmployeeWorklogs } = require('../core/worklogs');
 const { getEmployee } = require('../core/employees');
 
 router.get('/:logId', async (req, res) => {
@@ -9,6 +9,15 @@ router.get('/:logId', async (req, res) => {
         res.status(200).send(worklogData);
     } catch(err) {
         res.status(500).send(`Failed while trying to get worklog info. ${err.message}`);
+    }
+});
+
+router.get('/employees/:employeeNumber', async (req, res) => {
+    try {
+        const employeeData = await getEmployeeWorklogs(req.params.employeeNumber);
+        res.status(200).send(employeeData);
+    } catch(err) {
+        res.status(500).send(`Failed while trying to add new employee. ${err.message}`);
     }
 });
 

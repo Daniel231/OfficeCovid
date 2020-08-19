@@ -1,7 +1,7 @@
 const express = require('express');
 const moment = require('moment');
 const router = express.Router();
-const { createEmployee, getEmployee, removeEmployee, updateEmployee } = require('../core/employees');
+const { createEmployee, getEmployee, removeEmployee, updateEmployee, getEmployeeWorklogs } = require('../core/employees');
 const { getExposedEmployeesEmails } = require('../core/worklogs');
 const { sendMail } = require('../core/mail');
 
