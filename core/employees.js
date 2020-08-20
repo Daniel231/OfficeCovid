@@ -9,7 +9,7 @@ const getEmployee = (employeeNumber) => {
 }
 
 const removeEmployee = (employeeNumber) => {
-    return EmployeeModal.update({employeeNumber}, {Active: true});
+    return EmployeeModal.update({employeeNumber}, {isDeleted: true});
 }
 
 const updateEmployee = (employeeNumber, data) => {

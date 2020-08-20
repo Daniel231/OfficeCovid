@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597855881853" clover="3.2.0">
-  <project timestamp="1597855881853" name="All files">
-    <metrics statements="28" coveredstatements="22" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="3" elements="38" coveredelements="26" complexity="0" loc="28" ncloc="28" packages="2" files="2" classes="2"/>
+<coverage generated="1597934889809" clover="3.2.0">
+  <project timestamp="1597934889809" name="All files">
+    <metrics statements="38" coveredstatements="32" conditionals="2" coveredconditionals="1" methods="12" coveredmethods="7" elements="52" coveredelements="40" complexity="0" loc="38" ncloc="38" packages="3" files="3" classes="3"/>
+    <package name="core">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="employees.js" path="C:\Users\Daniel\Documents\Job\מטלות\Montara\core\employees.js">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="db">
       <metrics statements="24" coveredstatements="18" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="3"/>
       <file name="index.js" path="C:\Users\Daniel\Documents\Job\מטלות\Montara\db\index.js">
@@ -38,8 +54,8 @@
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
       </file>
     </package>
   </project>

@@ -24,6 +24,10 @@ const EmployeeSchema = new mongoose.Schema({
   isSick: {
     type: Boolean,
     default: false,
+  },
+  isDeleted: {
+    type: Boolean,
+    default: false,
   }
 }, {timestamps: true});
 
