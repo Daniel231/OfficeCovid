@@ -7,9 +7,9 @@
 const { createEmployee,
         getEmployee,
         removeEmployee,
-        updateEmployee } = require("../core/employees");
-const Employee = require("../db/models/Employee");
-const {connect, disconnect} = require("../db");
+        updateEmployee } = require("../../core/employees");
+const Employee = require("../../db/models/Employee");
+const {connect, disconnect} = require("../../db");
 
 describe("The Employee core functions", () => {
 
@@ -136,7 +136,7 @@ describe("The Employee core functions", () => {
     });
 
     /**
-     * Closing connection to mongo server.
+     * Closing the connection to mongo server.
      */
     afterAll(async () => {
         await disconnect();
