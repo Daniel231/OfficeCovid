@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node app.js",
-    "test": "jest --watch --coverage"
+    "test": "jest --coverage"
   },
   "jest": {
     "testEnvironment":"node"
